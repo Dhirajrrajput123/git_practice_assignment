@@ -1,13 +1,18 @@
-let number=19;
-let count=0;
-for( let i=1;i<=number;i++){ 
-  if (number%i==0){
-  count++;
+
+function checkprime(n){
+for (let i=2;i<=n/2;i++){
+if (n%i==0){  
+  return false;
+ } 
 }
+return true;
 }
-if(count==2){
-console.log("Yes");
+let num=45
+let ans=checkprime(num);
+if(ans){
+console.log(num," is a prime number");
 }
 else{
-console.log("No");
+console.log(num," is not a prime number");
+
 }
