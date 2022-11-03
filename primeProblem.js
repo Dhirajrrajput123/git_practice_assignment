@@ -1,14 +1,16 @@
-//to  find the number is prime number or not 
-let number=19;
-let count_of_divisible=0;
-fot(let i=1;i<=number;i++){
-if(number%i==0){
-count_of_divisible++;
+function checkprime(n){
+for (let i=2;i<=n/2;i++){
+if (n%i==0){  
+  return false;
+ } 
 }
+return true;
 }
-if(count_of_divisible==2){
-console.log(number," is a prime number");
+let num=45
+let ans=checkprime(num);
+if(ans){
+console.log(num," is a prime number");
 }
 else{
-console.log(number," is not a prime number");
+console.log(num," is not a prime number");
 }
