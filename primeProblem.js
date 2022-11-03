@@ -1,12 +1,13 @@
-//prime problem
 let number=19;
 let count=0;
-fot(let i=0;i<=number;i++){
-count++;
+for( let i=1;i<=number;i++){ 
+  if (number%i==0){
+  count++;
+}
 }
 if(count==2){
-console.log("yes");
+console.log("Yes");
 }
 else{
-console.log("no");
+console.log("No");
 }
