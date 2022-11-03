@@ -1,3 +1,4 @@
+
 //to  find the number is prime number or not 
 let number=19;
 let count_of_divisible=0;
@@ -11,4 +12,5 @@ console.log(number," is a prime number");
 }
 else{
 console.log(number," is not a prime number");
+
 }
